@@ -1,0 +1,25 @@
+Comandos Git
+
+git clone <Repo_URL> // descarga el repositorio  de la URL
+
+remota / origin
+- origin/main
+
+local
+- main 
+
+git status // Nos permite conocer el estatus de sincronizacion de la rama remota y local, tambien nos muestra si hay archivos modificados y pendientes a actualizar
+
+Pasos para subir cambios:
+1. Preparar (hacer track/stage) de los archivos que queremos subir
+  -git add "<nombre archivo>" //subir un solo archivo
+  -git add .  // Subir todos los nuevos archivos
+
+ -git restore --staged "<nombre archivo>" // para quitar un archivo que no queremos subir en el repositorio
+
+2. Crear un commit
+   -Un commit es un conjunto de cambios con un mensaje que los describa
+ -git commit -m "Mensaje" // Para subir el commit con la descripcion
+
+3. Sincronizamos la rama remota con los cambios en la rama local
+-git push // para subir los archivos
